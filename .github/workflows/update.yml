@@ -1,0 +1,65 @@
+name: 更新未出题清单
+
+on:
+  schedule:
+    # 每 4 小时跑一次（UTC 时间）。GitHub 的定时任务在高峰期可能延迟几分钟到几十分钟。
+    - cron: '0 */4 * * *'
+  workflow_dispatch:        # 支持在网页上手动点一下立即运行
+  push:
+    branches: [main]
+    paths:                  # 只有抓取脚本或页面变动时才顺带重跑
+      - 'scrape.mjs'
+      - 'index.html'
+      - '.github/workflows/update.yml'
+
+# 允许工作流向仓库写回 data.json
+permissions:
+  contents: write
+
+# 同一时间只跑一个，避免并发写冲突
+concurrency:
+  group: update-unsolved-list
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 抓取并计算未出题清单
+        run: node scrape.mjs .
+
+      - name: 校验生成结果
+        run: |
+          if [ ! -f data.json ]; then
+            echo "::error::data.json 未生成"
+            exit 1
+          fi
+          node -e "
+            const d = require('./data.json');
+            if (!Array.isArray(d.unused)) { console.error('unused 字段缺失'); process.exit(1); }
+            console.log('题库:', d.stats.bankSize, '| 作业:', d.stats.homeworkCount,
+                        '| 未出过:', d.unused.length, '| 已出过:', d.stats.usedInScopeCount);
+            if (d.stats.bankSize < 100) { console.error('题库数量异常，疑似抓取失败'); process.exit(1); }
+          "
+
+      - name: 提交更新
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "chore: 更新未出题清单 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
