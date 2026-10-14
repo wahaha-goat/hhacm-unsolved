@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HHACMOJ 未出题清单</title>
+<meta name="description" content="HHACMOJ 基础语法范围内尚未出过的题目清单，自动更新">
+<style>
+:root{
+  --brand:#004469; --brand2:#0a6ea8; --line:#d8dee4; --bg:#f6f8fa;
+  --text:#1f2328; --muted:#5a6672; --ok:#1a7f37; --warn:#9a6700;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:"Microsoft YaHei","PingFang SC","Segoe UI",-apple-system,sans-serif;
+  color:var(--text); line-height:1.65; background:#fff;
+  -webkit-text-size-adjust:100%;
+}
+header{
+  background:linear-gradient(135deg,var(--brand),var(--brand2));
+  color:#fff; padding:24px 20px 20px;
+}
+header .inner{max-width:1100px;margin:0 auto;}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.5px;}
+header .sub{opacity:.92;font-size:13px;}
+header .stamp{opacity:.85;font-size:12px;margin-top:8px;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px 64px;}
+
+/* 状态 */
+#state{padding:40px 20px;text-align:center;color:var(--muted);}
+#state .big{font-size:32px;margin-bottom:10px;}
+.err{background:#fff5f5;border:1px solid #ffc9c9;color:#c92a2a;
+     padding:16px;border-radius:8px;text-align:left;font-size:14px;margin-top:16px;}
+
+/* 统计 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+       gap:12px;margin:20px 0;}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:9px;
+      padding:12px 15px;}
+.stat b{display:block;font-size:22px;color:var(--brand);line-height:1.2;}
+.stat span{font-size:12px;color:var(--muted);}
+
+/* 工具栏 */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+         margin:18px 0;padding:14px;background:var(--bg);
+         border:1px solid var(--line);border-radius:9px;}
+.toolbar input,.toolbar select{
+  font-size:14px;padding:7px 11px;border:1px solid var(--line);
+  border-radius:7px;background:#fff;color:var(--text);font-family:inherit;
+}
+.toolbar input{flex:1 1 200px;min-width:0;}
+.toolbar select{flex:0 1 auto;}
+.btn{background:var(--brand);color:#fff;border:0;border-radius:7px;
+     padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit;
+     white-space:nowrap;}
+.btn:hover{background:var(--brand2);}
+.btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);}
+.btn.ghost:hover{background:var(--bg);}
+.count{font-size:13px;color:var(--muted);margin-left:auto;}
+
+/* 章节 */
+.chap{margin:26px 0 0;}
+.chap h3{font-size:15px;color:var(--brand);border-left:5px solid var(--brand);
+         padding-left:11px;margin:0 0 10px;display:flex;align-items:center;gap:8px;}
+.badge{background:var(--brand);color:#fff;font-size:11.5px;font-weight:400;
+       border-radius:20px;padding:1px 9px;}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{border-collapse:collapse;width:100%;font-size:14px;}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;}
+th{background:var(--brand);color:#fff;font-weight:600;font-size:12.5px;
+   white-space:nowrap;position:sticky;top:0;}
+tbody tr:nth-child(even){background:var(--bg);}
+tbody tr:hover{background:#e8f2f9;}
+td.pid{font-family:Consolas,monospace;color:var(--brand2);font-weight:700;width:60px;}
+td.tno{font-family:Consolas,monospace;color:var(--muted);width:56px;font-size:13px;}
+td.diff{width:52px;text-align:center;}
+td.rate{color:var(--muted);font-size:12.5px;white-space:nowrap;width:86px;}
+td.title{min-width:170px;}
+td.act{width:70px;text-align:center;}
+a.oj{color:var(--brand2);text-decoration:none;font-size:12.5px;}
+a.oj:hover{text-decoration:underline;}
+.d0{color:#8b949e;}
+.d1{color:var(--ok);}
+.d2{color:var(--brand2);}
+.d3{color:#9a6700;}
+
+/* 公告 */
+.note{background:#fffbe6;border-left:4px solid #d0a000;padding:11px 16px;
+      margin:18px 0;font-size:13.5px;border-radius:0 6px 6px 0;}
+.note b{color:#7a5c00;}
+
+/* 复制区 */
+.pastebox{background:var(--bg);border:1px solid var(--line);border-radius:8px;
+          padding:13px;font-family:Consolas,monospace;font-size:12.5px;
+          word-break:break-all;line-height:1.9;max-height:190px;overflow:auto;}
+.sec-title{font-size:16px;color:var(--brand);margin:34px 0 8px;
+           padding-bottom:6px;border-bottom:2px solid var(--line);}
+.toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);
+       background:#1f2328;color:#fff;padding:11px 22px;border-radius:8px;
+       font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:99;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+footer{text-align:center;color:#8b949e;font-size:12px;padding:26px 20px;
+       border-top:1px solid var(--line);margin-top:40px;}
+footer a{color:var(--brand2);text-decoration:none;}
+.empty{padding:30px;text-align:center;color:var(--muted);font-size:14px;}
+
+@media (max-width:560px){
+  header h1{font-size:19px;}
+  .wrap{padding:0 12px 48px;}
+  th,td{padding:6px 7px;font-size:13px;}
+  td.rate{display:none;} th.rate{display:none;}
+  .count{display:none;}
+}
+@media print{
+  header{background:var(--brand) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  th{background:var(--brand) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .toolbar,.btn,.toast{display:none !important;}
+  .tblwrap{overflow:visible;}
+  .chap{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>HHACMOJ 未出题清单</h1>
+    <div class="sub">基础语法范围（一本通编程启蒙 第 2~16 章）· 已自动排除历史作业出过的题目</div>
+    <div class="stamp" id="stamp">加载中 …</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="state"><div class="big">⏳</div><div>正在加载数据 …</div></div>
+  <div id="app" style="display:none">
+    <div class="stats" id="stats"></div>
+
+    <div class="note">
+      <b>数据自动更新。</b>本页数据由云端定时抓取 oj.hhacm.pw 生成，
+      新布置的作业一旦被记录，对应题目会自动从下方清单中移除。
+      页面缓存可能导致短暂延迟，可点「刷新数据」强制重新读取。
+    </div>
+
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="搜索题号 / 标题 / pid …" autocomplete="off">
+      <select id="ch"><option value="">全部章节</option></select>
+      <select id="sort">
+        <option value="tno">按教材顺序</option>
+        <option value="pid">按 pid</option>
+        <option value="rate">按通过率（低→高）</option>
+      </select>
+      <button class="btn ghost" id="refresh">刷新数据</button>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div id="list"></div>
+
+    <h2 class="sec-title">一键复制 · 全部 pid</h2>
+    <button class="btn" id="copyall">复制全部 pid</button>
+    <div class="pastebox" id="pidbox"></div>
+
+    <h2 class="sec-title">范围内已出过（务必避免）</h2>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>pid</th><th>编号</th><th>章</th><th>题目</th></tr></thead>
+        <tbody id="usedbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  数据源 <a href="https://oj.hhacm.pw" target="_blank" rel="noopener">oj.hhacm.pw</a>
+  · 本页由 GitHub Actions 定时自动生成
+</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+
+const CH_NAMES = {
+  2:'输出与文字', 3:'顺序结构入门', 4:'变量与交换', 5:'输入输出',
+  6:'算术运算', 7:'浮点数与精度', 8:'整数运算应用', 9:'字符与 ASCII',
+  10:'数学函数', 11:'整除与取余', 12:'数据类型与存储', 13:'格式化输出',
+  14:'浮点精度进阶', 15:'布尔型与最值', 16:'条件判断入门',
+};
+
+const $ = id => document.getElementById(id);
+let DATA = null;
+let filter = { q: '', ch: '', sort: 'tno' };
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+                  .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function toast(msg) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 1800);
+}
+function rate(p) {
+  if (p.tried === null || p.tried === undefined || p.tried === 0) return null;
+  return (p.passed ?? 0) / p.tried;
+}
+function fmtTime(iso) {
+  if (!iso) return '未知';
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  const p = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+
+async function load(force) {
+  try {
+    const url = 'data.json' + (force ? '?t=' + Date.now() : '');
+    const res = await fetch(url, { cache: force ? 'no-store' : 'default' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    DATA = await res.json();
+    if (!DATA || !Array.isArray(DATA.unused)) throw new Error('数据格式不正确');
+  } catch (e) {
+    $('state').innerHTML =
+      '<div class="big">⚠️</div><div>数据加载失败</div>' +
+      '<div class="err">' +
+      '<b>错误：</b>' + esc(e.message) + '<br><br>' +
+      '可能原因：<br>' +
+      '1. <code>data.json</code> 尚未生成（首次部署后需等 Actions 跑完一次）<br>' +
+      '2. 你直接双击打开了本地 HTML 文件（浏览器禁止读取本地 data.json）<br>' +
+      '&nbsp;&nbsp;&nbsp;→ 请改用部署后的网址访问，或本地运行 <code>python -m http.server</code><br>' +
+      '3. 网络问题，请重试' +
+      '</div>';
+    return;
+  }
+  render();
+}
+
+function render() {
+  $('state').style.display = 'none';
+  $('app').style.display = '';
+
+  const s = DATA.stats || {};
+  $('stamp').textContent = '数据生成时间：' + fmtTime(DATA.generatedAt)
+    + '　·　题库 ' + (s.bankSize ?? '?') + ' 题'
+    + '　·　作业 ' + (s.homeworkCount ?? '?') + ' 份';
+
+  const cards = [
+    [DATA.unused.length, '当前可布置'],
+    [s.basicTotal ?? '-', '基础语法总数'],
+    [s.usedInScopeCount ?? '-', '范围内已出过'],
+    [s.bankSize ?? '-', '题库总量'],
+    [s.homeworkCount ?? '-', '历史作业份数'],
+  ];
+  $('stats').innerHTML = cards.map(([v, k]) =>
+    `<div class="stat"><b>${esc(v)}</b><span>${esc(k)}</span></div>`).join('');
+
+  // 章节下拉
+  const chs = [...new Set(DATA.unused.map(p => p.ch))].sort((a, b) => a - b);
+  $('ch').innerHTML = '<option value="">全部章节</option>' +
+    chs.map(c => `<option value="${c}">第 ${c} 章 · ${esc(CH_NAMES[c] || '')}</option>`).join('');
+
+  // 已出过
+  $('usedbody').innerHTML = (DATA.usedInScope || []).map(p =>
+    `<tr><td class="pid">${p.pid}</td><td class="tno">T${p.tno}</td>` +
+    `<td class="tno">${p.ch}</td><td class="title">${esc(p.title)}</td></tr>`).join('');
+
+  renderList();
+}
+
+function currentItems() {
+  let items = DATA.unused.slice();
+  const q = filter.q.trim().toLowerCase();
+  if (q) {
+    items = items.filter(p =>
+      String(p.pid).includes(q) ||
+      String(p.tno).includes(q) ||
+      p.title.toLowerCase().includes(q));
+  }
+  if (filter.ch) items = items.filter(p => String(p.ch) === filter.ch);
+
+  if (filter.sort === 'pid') items.sort((a, b) => a.pid - b.pid);
+  else if (filter.sort === 'rate') {
+    items.sort((a, b) => {
+      const ra = rate(a), rb = rate(b);
+      if (ra === null && rb === null) return a.tno - b.tno;
+      if (ra === null) return 1;
+      if (rb === null) return -1;
+      return ra - rb;
+    });
+  } else items.sort((a, b) => a.tno - b.tno);
+  return items;
+}
+
+function renderList() {
+  const items = currentItems();
+  $('count').textContent = `显示 ${items.length} / ${DATA.unused.length} 题`;
+
+  if (!items.length) {
+    $('list').innerHTML = '<div class="empty">没有匹配的题目</div>';
+    $('pidbox').textContent = '';
+    return;
+  }
+
+  const groups = new Map();
+  for (const p of items) {
+    if (!groups.has(p.ch)) groups.set(p.ch, []);
+    groups.get(p.ch).push(p);
+  }
+  const keys = [...groups.keys()].sort((a, b) => a - b);
+
+  $('list').innerHTML = keys.map(ch => {
+    const arr = groups.get(ch);
+    const rows = arr.map(p => {
+      const r = rate(p);
+      const rateTxt = (p.passed === null || p.tried === null) ? '—'
+        : `${p.passed} / ${p.tried}`;
+      const rc = r === null ? 'd0' : r < 0.3 ? 'd1' : r < 0.6 ? 'd2' : 'd3';
+      const diff = p.difficulty === null || p.difficulty === undefined ? '—' : p.difficulty;
+      return `<tr>
+        <td class="pid">${p.pid}</td>
+        <td class="tno">T${p.tno}</td>
+        <td class="diff ${rc}">${diff}</td>
+        <td class="rate">${rateTxt}</td>
+        <td class="title">${esc(p.title)}</td>
+        <td class="act"><a class="oj" href="https://oj.hhacm.pw/p/${p.pid}" target="_blank" rel="noopener">打开 ↗</a></td>
+      </tr>`;
+    }).join('');
+    return `<section class="chap">
+      <h3>第 ${ch} 章 · ${esc(CH_NAMES[ch] || '')} <span class="badge">${arr.length} 题</span></h3>
+      <div class="tblwrap"><table>
+        <thead><tr>
+          <th>pid</th><th>编号</th><th>难度</th><th class="rate">AC / 尝试</th><th>题目</th><th>操作</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+    </section>`;
+  }).join('');
+
+  $('pidbox').textContent = items.map(p => p.pid).join(',');
+}
+
+function copyText(text, btn) {
+  const done = () => {
+    if (btn) {
+      const old = btn.textContent;
+      btn.textContent = '已复制 ✓';
+      setTimeout(() => { btn.textContent = old; }, 1500);
+    }
+    toast('已复制到剪贴板');
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+  } else fallbackCopy(text, done);
+}
+function fallbackCopy(text, cb) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); cb(); }
+  catch { toast('复制失败，请手动选择复制'); }
+  document.body.removeChild(ta);
+}
+
+// 事件绑定
+$('q').addEventListener('input', e => { filter.q = e.target.value; renderList(); });
+$('ch').addEventListener('change', e => { filter.ch = e.target.value; renderList(); });
+$('sort').addEventListener('change', e => { filter.sort = e.target.value; renderList(); });
+$('refresh').addEventListener('click', async e => {
+  e.target.disabled = true;
+  e.target.textContent = '刷新中 …';
+  await load(true);
+  e.target.disabled = false;
+  e.target.textContent = '刷新数据';
+  toast('数据已刷新');
+});
+$('copyall').addEventListener('click', e => copyText($('pidbox').textContent, e.target));
+
+// 支持 ?q= / ?ch= 直接筛选（可分享带条件的链接）
+// 必须在 load() 之前设置，否则首次渲染不会应用筛选
+const sp = new URLSearchParams(location.search);
+if (sp.get('q')) { filter.q = sp.get('q'); $('q').value = filter.q; }
+if (sp.get('sort')) { filter.sort = sp.get('sort'); $('sort').value = filter.sort; }
+if (sp.get('ch')) {
+  filter.ch = sp.get('ch');
+  // 章节下拉在数据加载后才填充，这里同步一下选中项
+  const sel = $('ch');
+  const apply = () => { sel.value = filter.ch; };
+  apply();
+  new MutationObserver((muts, obs) => {
+    apply();
+    if (sel.options.length > 1) obs.disconnect();
+  }).observe(sel, { childList: true });
+}
+
+load(false);
+</script>
+</body>
+</html>
