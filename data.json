@@ -1,0 +1,973 @@
+{
+  "generatedAt": "2026-10-14T13:12:57.131Z",
+  "source": "https://oj.hhacm.pw",
+  "range": {
+    "minChapter": 2,
+    "maxChapter": 16
+  },
+  "stats": {
+    "bankSize": 690,
+    "homeworkCount": 20,
+    "usedPidCount": 26,
+    "basicTotal": 91,
+    "unusedCount": 86,
+    "usedInScopeCount": 5
+  },
+  "unused": [
+    {
+      "pid": 115,
+      "tno": 2,
+      "title": "【例2.2】你好世界",
+      "ch": 2,
+      "difficulty": 6,
+      "passed": 15,
+      "tried": 44
+    },
+    {
+      "pid": 226,
+      "tno": 3,
+      "title": "练2.1 春节快乐",
+      "ch": 2,
+      "difficulty": 4,
+      "passed": 16,
+      "tried": 25
+    },
+    {
+      "pid": 337,
+      "tno": 4,
+      "title": "练2.2 单句春晓",
+      "ch": 2,
+      "difficulty": 7,
+      "passed": 11,
+      "tried": 13
+    },
+    {
+      "pid": 429,
+      "tno": 5,
+      "title": "【例3.1】 输出表达式的值",
+      "ch": 3,
+      "difficulty": 6,
+      "passed": 11,
+      "tried": 34
+    },
+    {
+      "pid": 451,
+      "tno": 7,
+      "title": "练3.1 唐诗春晓",
+      "ch": 3,
+      "difficulty": 1,
+      "passed": 19,
+      "tried": 55
+    },
+    {
+      "pid": 462,
+      "tno": 8,
+      "title": "练3.2 雪花",
+      "ch": 3,
+      "difficulty": 8,
+      "passed": 7,
+      "tried": 16
+    },
+    {
+      "pid": 473,
+      "tno": 9,
+      "title": "练3.3 01子串",
+      "ch": 3,
+      "difficulty": 10,
+      "passed": 5,
+      "tried": 6
+    },
+    {
+      "pid": 5,
+      "tno": 10,
+      "title": "【例4.1】 交换两个数的位置",
+      "ch": 4,
+      "difficulty": 1,
+      "passed": 16,
+      "tried": 52
+    },
+    {
+      "pid": 16,
+      "tno": 11,
+      "title": "【例4.2】 天安门广场的面积",
+      "ch": 4,
+      "difficulty": 1,
+      "passed": 6,
+      "tried": 7
+    },
+    {
+      "pid": 27,
+      "tno": 12,
+      "title": "练4.1 阿布拉1",
+      "ch": 4,
+      "difficulty": 10,
+      "passed": 5,
+      "tried": 8
+    },
+    {
+      "pid": 38,
+      "tno": 13,
+      "title": "练4.2 列朋波骨",
+      "ch": 4,
+      "difficulty": 10,
+      "passed": 4,
+      "tried": 4
+    },
+    {
+      "pid": 49,
+      "tno": 14,
+      "title": "练4.3 3个连续数",
+      "ch": 4,
+      "difficulty": 1,
+      "passed": 5,
+      "tried": 6
+    },
+    {
+      "pid": 60,
+      "tno": 15,
+      "title": "练4.4 牛吃牧草",
+      "ch": 4,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 71,
+      "tno": 16,
+      "title": "【例5.1】量身高",
+      "ch": 5,
+      "difficulty": 10,
+      "passed": 4,
+      "tried": 6
+    },
+    {
+      "pid": 82,
+      "tno": 17,
+      "title": "【例5.2】输出第二个整数",
+      "ch": 5,
+      "difficulty": 10,
+      "passed": 4,
+      "tried": 4
+    },
+    {
+      "pid": 93,
+      "tno": 18,
+      "title": "练5.1 复读机",
+      "ch": 5,
+      "difficulty": 10,
+      "passed": 5,
+      "tried": 5
+    },
+    {
+      "pid": 104,
+      "tno": 19,
+      "title": "练5.2 阿布拉2",
+      "ch": 5,
+      "difficulty": 10,
+      "passed": 3,
+      "tried": 3
+    },
+    {
+      "pid": 116,
+      "tno": 20,
+      "title": "练5.3 电影票",
+      "ch": 5,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 4
+    },
+    {
+      "pid": 127,
+      "tno": 21,
+      "title": "【例6.1】 比赛成绩",
+      "ch": 6,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 138,
+      "tno": 22,
+      "title": "【例6.2】捡石头",
+      "ch": 6,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 149,
+      "tno": 23,
+      "title": "【例6.3】 套盒子",
+      "ch": 6,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 8
+    },
+    {
+      "pid": 160,
+      "tno": 24,
+      "title": "练6.1 植树造林",
+      "ch": 6,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 8
+    },
+    {
+      "pid": 171,
+      "tno": 25,
+      "title": "练6.2 兴趣小组",
+      "ch": 6,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 182,
+      "tno": 26,
+      "title": "练6.3 整数的和",
+      "ch": 6,
+      "difficulty": 1,
+      "passed": 3,
+      "tried": 4
+    },
+    {
+      "pid": 193,
+      "tno": 27,
+      "title": "【例7.1】保留3位小数",
+      "ch": 7,
+      "difficulty": 1,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 204,
+      "tno": 28,
+      "title": "【例7.2】与圆相关的计算",
+      "ch": 7,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 5
+    },
+    {
+      "pid": 215,
+      "tno": 29,
+      "title": "练7.1 埃及金字塔",
+      "ch": 7,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 227,
+      "tno": 30,
+      "title": "练7.2 保留12位小数",
+      "ch": 7,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 1
+    },
+    {
+      "pid": 238,
+      "tno": 31,
+      "title": "练7.3买图书",
+      "ch": 7,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 249,
+      "tno": 32,
+      "title": "练7.4梯形面积",
+      "ch": 7,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 260,
+      "tno": 33,
+      "title": "【例8.1】人民币支付",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 271,
+      "tno": 34,
+      "title": "【例8.2】成绩",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 282,
+      "tno": 35,
+      "title": "【例8.3】计算球的体积",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 293,
+      "tno": 36,
+      "title": "练8.1 尼克与强盗",
+      "ch": 8,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 3
+    },
+    {
+      "pid": 304,
+      "tno": 37,
+      "title": "练8.2 完成习题",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 315,
+      "tno": 38,
+      "title": "练8.3 计算分数的浮点数值",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 326,
+      "tno": 39,
+      "title": "练8.4带余除法",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 338,
+      "tno": 40,
+      "title": "练8.5 幸运数",
+      "ch": 8,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 349,
+      "tno": 41,
+      "title": "【例9.1】输出字符三角形",
+      "ch": 9,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 9
+    },
+    {
+      "pid": 360,
+      "tno": 42,
+      "title": "【例9.2】打印字符",
+      "ch": 9,
+      "difficulty": 10,
+      "passed": 2,
+      "tried": 2
+    },
+    {
+      "pid": 371,
+      "tno": 43,
+      "title": "【例9.3】小写字母转大写字母",
+      "ch": 9,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 393,
+      "tno": 45,
+      "title": "练9.2 打印ASCII码",
+      "ch": 9,
+      "difficulty": 10,
+      "passed": 3,
+      "tried": 5
+    },
+    {
+      "pid": 415,
+      "tno": 47,
+      "title": "【例10.1】机票打折",
+      "ch": 10,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 426,
+      "tno": 48,
+      "title": "【例10.2】分钱游戏",
+      "ch": 10,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 428,
+      "tno": 49,
+      "title": "练10.1 细胞分裂",
+      "ch": 10,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 430,
+      "tno": 50,
+      "title": "练10.2 浮点数向零舍入",
+      "ch": 10,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 431,
+      "tno": 51,
+      "title": "练10.3 计算浮点数相除的余",
+      "ch": 10,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 432,
+      "tno": 52,
+      "title": "【例11.1】鸡兔同笼",
+      "ch": 11,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 433,
+      "tno": 53,
+      "title": "【例11.2】数字对调",
+      "ch": 11,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 434,
+      "tno": 54,
+      "title": "练11.1温度表达转化",
+      "ch": 11,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 435,
+      "tno": 55,
+      "title": "练11.2 间隔输出",
+      "ch": 11,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 436,
+      "tno": 56,
+      "title": "练11.3 等差数列末项计算",
+      "ch": 11,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 437,
+      "tno": 57,
+      "title": "练11.4计算(a+b)×c的值",
+      "ch": 11,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 2
+    },
+    {
+      "pid": 438,
+      "tno": 58,
+      "title": "练11.5计算(a+b)/c的值",
+      "ch": 11,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 5
+    },
+    {
+      "pid": 439,
+      "tno": 59,
+      "title": "【例12.1】浮点型数据类型存储空间大小",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 441,
+      "tno": 60,
+      "title": "【例12.2】长方体表面积",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 442,
+      "tno": 61,
+      "title": "【例12.3】甲流疫情死亡率",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 443,
+      "tno": 62,
+      "title": "练12.1整型数据类型存储空间大小",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 444,
+      "tno": 63,
+      "title": "练12.2奇葩的饭店",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 445,
+      "tno": 64,
+      "title": "练12.3 A×B问题",
+      "ch": 12,
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 3
+    },
+    {
+      "pid": 446,
+      "tno": 65,
+      "title": "练12.4计算并联电阻的阻值",
+      "ch": 12,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 447,
+      "tno": 66,
+      "title": "【例13.1】空格分隔输出",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 448,
+      "tno": 67,
+      "title": "【例13.2】 电子表",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 449,
+      "tno": 68,
+      "title": "【例13.3】时间差",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 450,
+      "tno": 69,
+      "title": "练13.1竖式计算",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 452,
+      "tno": 70,
+      "title": "练13.2 对齐输出",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 453,
+      "tno": 71,
+      "title": "练13.3 反向输出一个三位数",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 454,
+      "tno": 72,
+      "title": "练13.4 糖果游戏",
+      "ch": 13,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 455,
+      "tno": 73,
+      "title": "【例14.1】输出浮点数",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 456,
+      "tno": 74,
+      "title": "【例14.2】 四舍六入五留双",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 457,
+      "tno": 75,
+      "title": "【例14.3】 数学课上",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 458,
+      "tno": 76,
+      "title": "练14.1 歌手大奖赛",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 459,
+      "tno": 77,
+      "title": "练14.2 平均分",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 460,
+      "tno": 78,
+      "title": "练14.3 地球人口承载力估计",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 461,
+      "tno": 79,
+      "title": "练14.4 计算多项式的值",
+      "ch": 14,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 463,
+      "tno": 80,
+      "title": "【例15.1】 整型与布尔型的转换",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 464,
+      "tno": 81,
+      "title": "【例15.2】 偶数",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 465,
+      "tno": 82,
+      "title": "【例15.3】 最大数输出",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 466,
+      "tno": 83,
+      "title": "练15.1 其他数据类型存储空间大小",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 467,
+      "tno": 84,
+      "title": "练15.2 智商问题",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 468,
+      "tno": 85,
+      "title": "练15.3 最大的数",
+      "ch": 15,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 469,
+      "tno": 86,
+      "title": "【例16.1】 判断数正负",
+      "ch": 16,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 470,
+      "tno": 87,
+      "title": "【例16.2】 开灯",
+      "ch": 16,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 472,
+      "tno": 89,
+      "title": "练16.1 跳绳达人",
+      "ch": 16,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 474,
+      "tno": 90,
+      "title": "练16.2 奇偶数判断",
+      "ch": 16,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    },
+    {
+      "pid": 475,
+      "tno": 91,
+      "title": "练16.3 选择题判定",
+      "ch": 16,
+      "difficulty": null,
+      "passed": 0,
+      "tried": 0
+    }
+  ],
+  "usedInScope": [
+    {
+      "pid": 4,
+      "tno": 1,
+      "title": "【例2.1】Hello World",
+      "ch": 2
+    },
+    {
+      "pid": 440,
+      "tno": 6,
+      "title": "【例3.2】 打印长方形",
+      "ch": 3
+    },
+    {
+      "pid": 382,
+      "tno": 44,
+      "title": "练9.1 字符菱形",
+      "ch": 9
+    },
+    {
+      "pid": 404,
+      "tno": 46,
+      "title": "练9.3 加四密码",
+      "ch": 9
+    },
+    {
+      "pid": 471,
+      "tno": 88,
+      "title": "【例16.3】 收费",
+      "ch": 16
+    }
+  ],
+  "homeworks": [
+    {
+      "title": "第一天",
+      "beginAt": "2026-09-22T16:00:00.000Z",
+      "pids": [
+        4
+      ]
+    },
+    {
+      "title": "第二天",
+      "beginAt": "2026-09-23T16:00:00.000Z",
+      "pids": [
+        3
+      ]
+    },
+    {
+      "title": "第三天",
+      "beginAt": "2026-09-24T16:00:00.000Z",
+      "pids": [
+        833
+      ]
+    },
+    {
+      "title": "第四天",
+      "beginAt": "2026-09-26T16:00:00.000Z",
+      "pids": [
+        440
+      ]
+    },
+    {
+      "title": "第五天",
+      "beginAt": "2026-09-27T16:00:00.000Z",
+      "pids": [
+        818
+      ]
+    },
+    {
+      "title": "第六天",
+      "beginAt": "2026-09-28T16:00:00.000Z",
+      "pids": [
+        819
+      ]
+    },
+    {
+      "title": "第七天",
+      "beginAt": "2026-09-29T16:00:00.000Z",
+      "pids": [
+        820
+      ]
+    },
+    {
+      "title": "第八天",
+      "beginAt": "2026-10-01T16:00:00.000Z",
+      "pids": [
+        824
+      ]
+    },
+    {
+      "title": "第九天",
+      "beginAt": "2026-10-02T16:00:00.000Z",
+      "pids": [
+        822
+      ]
+    },
+    {
+      "title": "第十题",
+      "beginAt": "2026-10-03T16:00:00.000Z",
+      "pids": [
+        826
+      ]
+    },
+    {
+      "title": "第十二天",
+      "beginAt": "2026-10-04T16:00:00.000Z",
+      "pids": [
+        850
+      ]
+    },
+    {
+      "title": "第十一天",
+      "beginAt": "2026-10-04T16:00:00.000Z",
+      "pids": [
+        821
+      ]
+    },
+    {
+      "title": "第十三天",
+      "beginAt": "2026-10-06T16:00:00.000Z",
+      "pids": [
+        828
+      ]
+    },
+    {
+      "title": "第十四天",
+      "beginAt": "2026-10-07T16:00:00.000Z",
+      "pids": [
+        829
+      ]
+    },
+    {
+      "title": "第十五天",
+      "beginAt": "2026-10-08T16:00:00.000Z",
+      "pids": [
+        839
+      ]
+    },
+    {
+      "title": "第十六天",
+      "beginAt": "2026-10-09T16:00:00.000Z",
+      "pids": [
+        835
+      ]
+    },
+    {
+      "title": "第十七天",
+      "beginAt": "2026-10-10T16:00:00.000Z",
+      "pids": [
+        843
+      ]
+    },
+    {
+      "title": "第十九天",
+      "beginAt": "2026-10-12T16:00:00.000Z",
+      "pids": [
+        832,
+        440,
+        889
+      ]
+    },
+    {
+      "title": "第二十天",
+      "beginAt": "2026-10-13T16:00:00.000Z",
+      "pids": [
+        404,
+        382,
+        560,
+        471
+      ]
+    },
+    {
+      "title": "第二十一天",
+      "beginAt": "2026-10-14T16:00:00.000Z",
+      "pids": [
+        836,
+        869,
+        827
+      ]
+    }
+  ]
+}
