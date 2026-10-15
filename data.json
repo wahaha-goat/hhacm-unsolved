@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T13:16:55.971Z",
+  "generatedAt": "2026-10-15T03:30:45.981Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -20,8 +20,8 @@
       "title": "【例2.2】你好世界",
       "ch": 2,
       "difficulty": 6,
-      "passed": 15,
-      "tried": 44
+      "passed": 16,
+      "tried": 45
     },
     {
       "pid": 226,
@@ -961,12 +961,12 @@
       ]
     },
     {
-      "title": "第二十一天",
-      "beginAt": "2026-10-14T16:00:00.000Z",
+      "title": "第二十二天",
+      "beginAt": "2026-10-15T16:00:00.000Z",
       "pids": [
-        836,
-        869,
-        827
+        925,
+        922,
+        934
       ]
     }
   ]
