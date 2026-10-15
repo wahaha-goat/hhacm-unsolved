@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T08:55:21.104Z",
+  "generatedAt": "2026-10-15T16:26:22.101Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -73,9 +73,9 @@
       "tno": 9,
       "title": "练3.3 01子串",
       "ch": 3,
-      "difficulty": 10,
-      "passed": 5,
-      "tried": 6
+      "difficulty": 9,
+      "passed": 6,
+      "tried": 7
     },
     {
       "pid": 5,
@@ -379,9 +379,9 @@
       "tno": 43,
       "title": "【例9.3】小写字母转大写字母",
       "ch": 9,
-      "difficulty": null,
-      "passed": 0,
-      "tried": 0
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 3
     },
     {
       "pid": 393,
@@ -442,9 +442,9 @@
       "tno": 52,
       "title": "【例11.1】鸡兔同笼",
       "ch": 11,
-      "difficulty": null,
-      "passed": 0,
-      "tried": 0
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 7
     },
     {
       "pid": 433,
@@ -757,9 +757,9 @@
       "tno": 87,
       "title": "【例16.2】 开灯",
       "ch": 16,
-      "difficulty": null,
-      "passed": 0,
-      "tried": 0
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 4
     },
     {
       "pid": 472,
@@ -775,9 +775,9 @@
       "tno": 90,
       "title": "练16.2 奇偶数判断",
       "ch": 16,
-      "difficulty": null,
-      "passed": 0,
-      "tried": 0
+      "difficulty": 10,
+      "passed": 1,
+      "tried": 3
     },
     {
       "pid": 475,
