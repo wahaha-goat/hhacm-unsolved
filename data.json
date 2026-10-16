@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:47:42.917Z",
+  "generatedAt": "2026-10-16T16:12:04.536Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -8,7 +8,7 @@
   "stats": {
     "bankSize": 690,
     "homeworkCount": 20,
-    "usedPidCount": 26,
+    "usedPidCount": 25,
     "basicTotal": 91,
     "unusedCount": 86,
     "usedInScopeCount": 5
@@ -961,12 +961,12 @@
       ]
     },
     {
-      "title": "第二十二天",
+      "title": "10.17 第二十三天",
       "beginAt": "2026-10-15T16:00:00.000Z",
       "pids": [
-        925,
-        922,
-        934
+        820,
+        868,
+        883
       ]
     }
   ]
