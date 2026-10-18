@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T08:36:41.513Z",
+  "generatedAt": "2026-10-18T15:28:44.591Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -19,9 +19,9 @@
       "tno": 2,
       "title": "【例2.2】你好世界",
       "ch": 2,
-      "difficulty": 6,
-      "passed": 16,
-      "tried": 45
+      "difficulty": 5,
+      "passed": 18,
+      "tried": 48
     },
     {
       "pid": 226,
@@ -29,26 +29,26 @@
       "title": "练2.1 春节快乐",
       "ch": 2,
       "difficulty": 4,
-      "passed": 16,
-      "tried": 25
+      "passed": 17,
+      "tried": 27
     },
     {
       "pid": 337,
       "tno": 4,
       "title": "练2.2 单句春晓",
       "ch": 2,
-      "difficulty": 7,
-      "passed": 11,
-      "tried": 13
+      "difficulty": 6,
+      "passed": 12,
+      "tried": 16
     },
     {
       "pid": 429,
       "tno": 5,
       "title": "【例3.1】 输出表达式的值",
       "ch": 3,
-      "difficulty": 6,
+      "difficulty": 7,
       "passed": 11,
-      "tried": 34
+      "tried": 42
     },
     {
       "pid": 451,
@@ -56,17 +56,17 @@
       "title": "练3.1 唐诗春晓",
       "ch": 3,
       "difficulty": 1,
-      "passed": 19,
-      "tried": 55
+      "passed": 20,
+      "tried": 57
     },
     {
       "pid": 462,
       "tno": 8,
       "title": "练3.2 雪花",
       "ch": 3,
-      "difficulty": 8,
-      "passed": 7,
-      "tried": 16
+      "difficulty": 7,
+      "passed": 8,
+      "tried": 18
     },
     {
       "pid": 473,
@@ -74,8 +74,8 @@
       "title": "练3.3 01子串",
       "ch": 3,
       "difficulty": 9,
-      "passed": 6,
-      "tried": 7
+      "passed": 7,
+      "tried": 9
     },
     {
       "pid": 5,
@@ -84,7 +84,7 @@
       "ch": 4,
       "difficulty": 1,
       "passed": 16,
-      "tried": 52
+      "tried": 55
     },
     {
       "pid": 16,
