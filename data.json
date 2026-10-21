@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T09:09:46.065Z",
+  "generatedAt": "2026-10-21T16:44:02.351Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -83,8 +83,8 @@
       "title": "【例4.1】 交换两个数的位置",
       "ch": 4,
       "difficulty": 1,
-      "passed": 16,
-      "tried": 66
+      "passed": 18,
+      "tried": 77
     },
     {
       "pid": 16,
@@ -361,9 +361,9 @@
       "tno": 41,
       "title": "【例9.1】输出字符三角形",
       "ch": 9,
-      "difficulty": 7,
-      "passed": 10,
-      "tried": 34
+      "difficulty": 6,
+      "passed": 12,
+      "tried": 38
     },
     {
       "pid": 360,
