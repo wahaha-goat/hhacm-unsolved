@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T03:30:36.017Z",
+  "generatedAt": "2026-10-25T08:58:42.530Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -83,8 +83,8 @@
       "title": "【例4.1】 交换两个数的位置",
       "ch": 4,
       "difficulty": 1,
-      "passed": 23,
-      "tried": 85
+      "passed": 25,
+      "tried": 96
     },
     {
       "pid": 16,
