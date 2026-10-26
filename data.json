@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-26T09:48:10.460Z",
+  "generatedAt": "2026-10-26T18:20:14.149Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
     "maxChapter": 16
   },
   "stats": {
-    "bankSize": 690,
+    "bankSize": 692,
     "homeworkCount": 20,
     "usedPidCount": 25,
     "basicTotal": 91,
@@ -361,9 +361,9 @@
       "tno": 41,
       "title": "【例9.1】输出字符三角形",
       "ch": 9,
-      "difficulty": 5,
-      "passed": 17,
-      "tried": 46
+      "difficulty": 6,
+      "passed": 19,
+      "tried": 56
     },
     {
       "pid": 360,
