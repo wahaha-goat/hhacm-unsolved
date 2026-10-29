@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T20:48:56.723Z",
+  "generatedAt": "2026-10-29T04:41:14.496Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -362,8 +362,8 @@
       "title": "【例9.1】输出字符三角形",
       "ch": 9,
       "difficulty": 6,
-      "passed": 19,
-      "tried": 56
+      "passed": 20,
+      "tried": 58
     },
     {
       "pid": 360,
