@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-29T14:59:01.816Z",
+  "generatedAt": "2026-10-30T04:40:54.511Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
     "maxChapter": 16
   },
   "stats": {
-    "bankSize": 692,
+    "bankSize": 693,
     "homeworkCount": 20,
     "usedPidCount": 25,
     "basicTotal": 91,
