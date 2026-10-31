@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T04:25:19.947Z",
+  "generatedAt": "2026-10-31T14:21:23.662Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -39,7 +39,7 @@
       "ch": 2,
       "difficulty": 6,
       "passed": 12,
-      "tried": 16
+      "tried": 17
     },
     {
       "pid": 429,
@@ -84,7 +84,7 @@
       "ch": 4,
       "difficulty": 1,
       "passed": 28,
-      "tried": 106
+      "tried": 107
     },
     {
       "pid": 16,
