@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T04:44:09.644Z",
+  "generatedAt": "2026-11-01T14:46:51.170Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -20,8 +20,8 @@
       "title": "【例2.2】你好世界",
       "ch": 2,
       "difficulty": 5,
-      "passed": 18,
-      "tried": 48
+      "passed": 19,
+      "tried": 52
     },
     {
       "pid": 226,
@@ -29,8 +29,8 @@
       "title": "练2.1 春节快乐",
       "ch": 2,
       "difficulty": 4,
-      "passed": 17,
-      "tried": 27
+      "passed": 18,
+      "tried": 28
     },
     {
       "pid": 337,
@@ -38,8 +38,8 @@
       "title": "练2.2 单句春晓",
       "ch": 2,
       "difficulty": 6,
-      "passed": 12,
-      "tried": 17
+      "passed": 13,
+      "tried": 18
     },
     {
       "pid": 429,
@@ -47,8 +47,8 @@
       "title": "【例3.1】 输出表达式的值",
       "ch": 3,
       "difficulty": 7,
-      "passed": 11,
-      "tried": 42
+      "passed": 12,
+      "tried": 44
     },
     {
       "pid": 451,
@@ -56,8 +56,8 @@
       "title": "练3.1 唐诗春晓",
       "ch": 3,
       "difficulty": 1,
-      "passed": 20,
-      "tried": 57
+      "passed": 21,
+      "tried": 59
     },
     {
       "pid": 462,
@@ -65,8 +65,8 @@
       "title": "练3.2 雪花",
       "ch": 3,
       "difficulty": 7,
-      "passed": 8,
-      "tried": 18
+      "passed": 9,
+      "tried": 19
     },
     {
       "pid": 473,
@@ -74,8 +74,8 @@
       "title": "练3.3 01子串",
       "ch": 3,
       "difficulty": 9,
-      "passed": 7,
-      "tried": 9
+      "passed": 8,
+      "tried": 10
     },
     {
       "pid": 5,
@@ -83,8 +83,8 @@
       "title": "【例4.1】 交换两个数的位置",
       "ch": 4,
       "difficulty": 1,
-      "passed": 30,
-      "tried": 111
+      "passed": 31,
+      "tried": 113
     },
     {
       "pid": 16,
@@ -93,16 +93,16 @@
       "ch": 4,
       "difficulty": 1,
       "passed": 6,
-      "tried": 7
+      "tried": 14
     },
     {
       "pid": 27,
       "tno": 12,
       "title": "练4.1 阿布拉1",
       "ch": 4,
-      "difficulty": 10,
+      "difficulty": 9,
       "passed": 5,
-      "tried": 8
+      "tried": 10
     },
     {
       "pid": 38,
@@ -111,7 +111,7 @@
       "ch": 4,
       "difficulty": 10,
       "passed": 4,
-      "tried": 4
+      "tried": 5
     },
     {
       "pid": 49,
@@ -120,7 +120,7 @@
       "ch": 4,
       "difficulty": 1,
       "passed": 5,
-      "tried": 6
+      "tried": 7
     },
     {
       "pid": 60,
