@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T14:46:51.170Z",
+  "generatedAt": "2026-11-01T20:15:34.655Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -92,8 +92,8 @@
       "title": "【例4.2】 天安门广场的面积",
       "ch": 4,
       "difficulty": 1,
-      "passed": 6,
-      "tried": 14
+      "passed": 7,
+      "tried": 16
     },
     {
       "pid": 27,
@@ -101,8 +101,8 @@
       "title": "练4.1 阿布拉1",
       "ch": 4,
       "difficulty": 9,
-      "passed": 5,
-      "tried": 10
+      "passed": 6,
+      "tried": 12
     },
     {
       "pid": 38,
@@ -110,8 +110,8 @@
       "title": "练4.2 列朋波骨",
       "ch": 4,
       "difficulty": 10,
-      "passed": 4,
-      "tried": 5
+      "passed": 5,
+      "tried": 6
     },
     {
       "pid": 49,
@@ -119,8 +119,8 @@
       "title": "练4.3 3个连续数",
       "ch": 4,
       "difficulty": 1,
-      "passed": 5,
-      "tried": 7
+      "passed": 6,
+      "tried": 8
     },
     {
       "pid": 60,
@@ -136,9 +136,9 @@
       "tno": 16,
       "title": "【例5.1】量身高",
       "ch": 5,
-      "difficulty": 10,
-      "passed": 4,
-      "tried": 6
+      "difficulty": 9,
+      "passed": 5,
+      "tried": 9
     },
     {
       "pid": 82,
@@ -146,8 +146,8 @@
       "title": "【例5.2】输出第二个整数",
       "ch": 5,
       "difficulty": 10,
-      "passed": 4,
-      "tried": 4
+      "passed": 5,
+      "tried": 5
     },
     {
       "pid": 93,
@@ -155,8 +155,8 @@
       "title": "练5.1 复读机",
       "ch": 5,
       "difficulty": 10,
-      "passed": 5,
-      "tried": 5
+      "passed": 6,
+      "tried": 6
     },
     {
       "pid": 104,
@@ -164,8 +164,8 @@
       "title": "练5.2 阿布拉2",
       "ch": 5,
       "difficulty": 10,
-      "passed": 3,
-      "tried": 3
+      "passed": 4,
+      "tried": 5
     },
     {
       "pid": 116,
@@ -173,8 +173,8 @@
       "title": "练5.3 电影票",
       "ch": 5,
       "difficulty": 10,
-      "passed": 2,
-      "tried": 4
+      "passed": 3,
+      "tried": 5
     },
     {
       "pid": 127,
@@ -182,8 +182,8 @@
       "title": "【例6.1】 比赛成绩",
       "ch": 6,
       "difficulty": 10,
-      "passed": 2,
-      "tried": 2
+      "passed": 3,
+      "tried": 3
     },
     {
       "pid": 138,
@@ -191,8 +191,8 @@
       "title": "【例6.2】捡石头",
       "ch": 6,
       "difficulty": 10,
-      "passed": 2,
-      "tried": 2
+      "passed": 3,
+      "tried": 3
     },
     {
       "pid": 149,
@@ -227,8 +227,8 @@
       "title": "练6.3 整数的和",
       "ch": 6,
       "difficulty": 1,
-      "passed": 3,
-      "tried": 4
+      "passed": 4,
+      "tried": 5
     },
     {
       "pid": 193,
