@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T04:38:38.574Z",
+  "generatedAt": "2026-11-24T19:22:52.874Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -56,8 +56,8 @@
       "title": "练3.1 唐诗春晓",
       "ch": 3,
       "difficulty": 1,
-      "passed": 21,
-      "tried": 59
+      "passed": 22,
+      "tried": 60
     },
     {
       "pid": 462,
@@ -83,8 +83,8 @@
       "title": "【例4.1】 交换两个数的位置",
       "ch": 4,
       "difficulty": 1,
-      "passed": 31,
-      "tried": 113
+      "passed": 33,
+      "tried": 116
     },
     {
       "pid": 16,
@@ -92,8 +92,8 @@
       "title": "【例4.2】 天安门广场的面积",
       "ch": 4,
       "difficulty": 1,
-      "passed": 7,
-      "tried": 17
+      "passed": 8,
+      "tried": 18
     },
     {
       "pid": 27,
