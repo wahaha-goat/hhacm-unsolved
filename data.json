@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T03:23:49.990Z",
+  "generatedAt": "2026-11-25T13:56:20.579Z",
   "source": "https://oj.hhacm.pw",
   "range": {
     "minChapter": 2,
@@ -119,8 +119,8 @@
       "title": "练4.3 3个连续数",
       "ch": 4,
       "difficulty": 1,
-      "passed": 6,
-      "tried": 8
+      "passed": 7,
+      "tried": 9
     },
     {
       "pid": 60,
@@ -227,8 +227,8 @@
       "title": "练6.3 整数的和",
       "ch": 6,
       "difficulty": 1,
-      "passed": 4,
-      "tried": 5
+      "passed": 5,
+      "tried": 6
     },
     {
       "pid": 193,
@@ -236,8 +236,8 @@
       "title": "【例7.1】保留3位小数",
       "ch": 7,
       "difficulty": 1,
-      "passed": 2,
-      "tried": 2
+      "passed": 3,
+      "tried": 5
     },
     {
       "pid": 204,
